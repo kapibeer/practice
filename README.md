@@ -10,10 +10,16 @@
 ## Запуск проекта
 
 1. Убедитесь, что установлен Docker и Docker Compose.
-2. В корне проекта выполните:
-
+2. В директориях movies, users соответственно соберите образы:
+ ```bash
+docker build . -t movies
+```
+ ```bash
+docker build . -t users
+```
+3. В корне проекта выполните:
 ```bash
-docker-compose up --build
+docker-compose up -d
 ```
 
 ## Документация
